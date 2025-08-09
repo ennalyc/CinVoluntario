@@ -1,4 +1,6 @@
 type Classroom = {
-    class: Class
-    enrolledStudents: Student[]
+    id: number,
+    professor: Professor,
+    class: Class,
+    enrolledStudents: Student[],
 }

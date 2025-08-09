@@ -3,3 +3,4 @@ type Class = {
     code: string,
     name: string,
 };
+
