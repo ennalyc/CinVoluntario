@@ -26,7 +26,7 @@ function SideBar() {
             <Image src={Logo} alt='CinVoluntario Logo' className='w-32 h-8 mb-2 object-contain'/>
             {
                 userClassrooms.map((uc) => (
-                    <SelectionField
+                    <SelectionField key={uc.id}
                     title={uc.class.name}
                     options={userClassrooms}
                     />

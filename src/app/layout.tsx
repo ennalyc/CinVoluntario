@@ -30,7 +30,11 @@ export default function RootLayout({
       >
         <div className="flex flex-row">
           <SideBar/>
-          {children}
+          <main className='bg-red-800 w-screen h-screen flex justify-center items-center'>
+            <div className='bg-neutral-100 w-16/17 h-13/14 rounded-2xl flex items-start p-8 overflow-hidden'>
+              {children}
+            </div>
+          </main>
         </div>
       </body>
     </html>
