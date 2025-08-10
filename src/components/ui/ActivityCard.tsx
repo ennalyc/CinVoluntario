@@ -8,7 +8,7 @@ type ActivityCardProp = {
 
 function ActivityCard({activity, studentId}: ActivityCardProp) {
   return (
-    <Link href={`/students/${studentId}/activities/${activity.id.toString()}`}>
+    <Link href={`/students/${studentId}/activities/${activity.id}`}>
         <div className='flex flex-col w-full h-16 rounded-xs items-start justify-center px-4 bg-neutral-50 drop-shadow-md'>
             <h4 className='text-md'>{activity.title}</h4>
             <h5 className='text-neutral-500 text-sm'>{activity.date.toLocaleDateString()}</h5>
